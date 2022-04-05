@@ -254,7 +254,7 @@ def training_testing(epochs):
         val_loss_max = val_loss
         ## save model
         model_path = './project1_model.pt'
-        torch.save(net.state_dict(), model_path)
+        torch.save(net.module.state_dict(), model_path)
   print("Accuracy: ",(torch.eq(torch.max(predicted_output, 1)[1],labels).sum()/len(labels)*100).data.cpu().numpy())
 
   return train_loss_history, val_loss_history, val_accuracy, train_acc_history, val_acc_history
