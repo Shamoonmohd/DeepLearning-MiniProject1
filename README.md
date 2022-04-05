@@ -18,7 +18,7 @@ python self_eval.py
 
 ```
 
-#### Issue resolved:
+## Issues resolved:
 - We have removed unnnecessary libraries, which are used later in project
 - Rename `project1_model.py` (previous edition) to `resnet.py`
 - Added `project1_model.py` contain model architecture which is needed to run `self_eval.py`

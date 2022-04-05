@@ -1,14 +1,8 @@
 import torch
-import time
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-import torch.backends.cudnn as cudnn
 import torchvision
-import torchvision.transforms as transforms
-from torch.utils.data.sampler import SubsetRandomSampler
-from torch.utils.data import DataLoader 
-import numpy as np
+import torch.nn as nn
+from torchvision import transforms
+import torch.nn.functional as F
 
 
 class BasicBlock(torch.nn.Module):
